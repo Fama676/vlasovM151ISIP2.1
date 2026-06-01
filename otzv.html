@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Отзывы</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Домой</a>
+        <a href="istori.html">История</a>
+        <a href="resept.html">Рецепты</a>
+        <a href="otzv.html">Отзывы</a>
+        <button id="theme-toggle" class="theme-toggle">🌙 Тёмная</button>
+    </nav>
+
+    <div class="menu">
+        <div class="card">
+            <h3>Анна Петрова</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Щи по старинному рецепту просто невероятные! Напомнили детство у бабушки в деревне.</p>
+        </div>
+        <div class="card">
+            <h3>Дмитрий Соколов</h3>
+            <p>⭐⭐⭐⭐</p>
+            <p>Очень понравился раздел с историей застолья. Рецепты простые и понятные, всё получилось с первого раза.</p>
+        </div>
+        <div class="card">
+            <h3>Елена Кузнецова</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Блины на Масленицу вышли идеальными! Тесто воздушное, начинка сочная. Обязательно порекомендую сайт друзьям.</p>
+        </div>
+    </div>
+
+    <div class="card" style="max-width: 600px; margin: 0 auto 40px;">
+        <h3>Оставить отзыв</h3>
+        <form onsubmit="event.preventDefault(); alert('Спасибо! Отзыв успешно отправлен.'); this.reset();" style="padding: 0 15px 15px; display: flex; flex-direction: column; gap: 12px;">
+            <label style="color: var(--card-text);">Ваше имя:
+                <input type="text" required style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; border-radius: 4px; border: 1px solid #999; background: var(--bg-body); color: var(--text-main);">
+            </label>
+            <label style="color: var(--card-text);">Ваш отзыв:
+                <textarea required rows="4" style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; border-radius: 4px; border: 1px solid #999; background: var(--bg-body); color: var(--text-main);"></textarea>
+            </label>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </div>
+
+    <footer>
+        <h3>Наши данные</h3>
+        <p>Почта: russkaya@gmail.com</p>
+        <p>Телефон: 8 909 504 87 55</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
